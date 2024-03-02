@@ -1,0 +1,275 @@
+@font-face {
+  font-family: "Museo Sans 500";
+  src: url("fonts/museosans-500.ttf");
+  src: url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.svg#Museo Sans 500")format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans Cyrl W03 900";
+  src: url("fonts/museosans-900.ttf");
+  src: url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.svg#Museo Sans Cyrl W03 900")format("svg");
+}
+
+@font-face {
+  font-family: "BemboStd-Bold";
+  src: url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.eot");
+  src: url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.svg#BemboStd-Bold")format("svg");
+}
+
+.comunicadodeprensaa
+  {
+    font-family: "BemboStd-Bold";
+    font-weight: bold;
+    color: black;
+    font-size: 25pt;
+    letter-spacing: 3px;
+
+  }
+
+  #titulocomunicadoa
+  {
+    font-family: "Museo Sans Cyrl W03 900";
+    color: black;
+    font-size: 23pt;
+  }
+
+  #textocomunicadoa
+  {
+    font-family: "Museo Sans 500";
+    color: black;
+    text-align: justify;
+    text-justify: inter-word;
+    font-size: 20pt;
+  }
+
+  #fechacomunicadoa
+  {
+    font-family: "Museo Sans 500";
+    color: black;
+    text-align:right;
+    font-size: 21pt;
+  }
+
+.indexbg {
+  background: #e4e9f7;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.box {
+  background: #fdfdfd;
+  display: flex;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(148, 151, 192, 0.1),
+  0 32px 64px -48px rgba(0, 0, 0, 0.1);
+}
+
+.form-box {
+  width: 400px;
+  margin: 0px 10px;
+}
+
+.form-box header {
+  font-family: "Museo Sans Cyrl W03 900";
+  font-size: 35px;
+  color: #111e60;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+
+}
+
+.form-box form .input input{
+  height: 40px;
+  width: 95%;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+  width: 95%;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+label {
+  font-family: "Museo Sans 500";
+  color: #626882;
+}
+
+.btn {
+  height: 40px;
+  background: rgba(72, 68, 182, 0.808);
+  border: 0;
+  border-radius: 7px;
+  color: #eeeff0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .03s;
+  margin-top: 20px;
+  padding: 0px 15px;
+}
+
+.btn:hover {
+  opacity: 0.82;
+}
+
+.home {
+  height: 60px;
+  width: 60px;
+  background: rgba(79, 120, 224, 0.808);
+  border: 0;
+  border-radius: 7px;
+  color: #eeeff0;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all .03s;
+  margin-top: 20px;
+  padding: 0px 15px;
+}
+
+.home:hover {
+  opacity: 0.82;
+}
+
+.textologo {
+  color:#111e60;
+  font-family: bembo std;
+  src: url(fonts/Bembo-Std.ttf);
+  font-size: 150%;
+  text-transform: uppercase;
+}
+h2 {
+  color:#111e60;
+  font-family: "Museo Sans Cyrl W03 900";
+  font-weight: 900;
+  font-size: 350%;
+}
+p {
+  color:#111e60;
+  font-family: "Museo Sans 500";
+  font-size: 180%;
+}
+
+.view{
+    height: 1350px; 
+    width: 1080;
+    background-color: #eeeff0;
+  }
+
+.comunicadoview {
+    height: 1650px; 
+    width: 1275px;
+    background-color: #eeeff0;
+  }
+
+#border {
+    height: 1650px; 
+    width: 1275px;
+  }
+
+.postclass { 
+    width: 100%;
+    height: 100%;
+    display: table;
+ }
+
+ .center { 
+    width: 75%;
+    height: 80%;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+ }
+
+ .tdicon {
+  width: 90px;
+}
+
+.tddatos {
+  height: fit-content;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+.tddatosempty {
+  height: fit-content;
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+
+.viewhistoria{
+  height: 1920px; 
+  width: 1080;
+  background-color: #eeeff0;
+}
+
+.historiaclass { 
+  width: 100%;
+  height: 100%;
+  display: table;
+  
+}
+
+.centerhistoria { 
+  width: 80%;
+  height: 80%;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.textologohistoria {
+  color:#111e60;
+  font-family: bembo std;
+  src: url(fonts/Bembo-Std.ttf);
+  font-size: 200%;
+
+  text-transform: uppercase;
+}
+
+.phistoria {
+  color:#111e60;
+  font-family: "Museo Sans 500";
+  font-size: 220%;
+  text-align: center;
+}
+
+.tdhistoria {
+  height: fit-content;
+  padding-bottom: 30px;
+  padding-top: 30px;
+  padding-right: 20px;
+}
+
+
