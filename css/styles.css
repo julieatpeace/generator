@@ -28,6 +28,17 @@
   url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.svg#BemboStd-Bold")format("svg");
 }
 
+@font-face {
+  font-family: "BemboStd";
+  src: url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.eot");
+  src: url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.svg#BemboStd")format("svg");
+}
+
+
 .comunicadodeprensaa
   {
     font-family: "BemboStd-Bold";
@@ -163,8 +174,7 @@ label {
 
 .textologo {
   color:#111e60;
-  font-family: bembo std;
-  src: url(fonts/Bembo-Std.ttf);
+  font-family: "BemboStd";
   font-size: 150%;
   text-transform: uppercase;
 }
@@ -251,8 +261,7 @@ p {
 
 .textologohistoria {
   color:#111e60;
-  font-family: bembo std;
-  src: url(fonts/Bembo-Std.ttf);
+  font-family: "BemboStd";
   font-size: 200%;
 
   text-transform: uppercase;
@@ -273,3 +282,6 @@ p {
 }
 
 
+a {
+  font-family: "Museo Sans Cyrl W03 900";
+}
