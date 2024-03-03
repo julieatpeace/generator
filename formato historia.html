@@ -6,6 +6,9 @@
 </head>
 
 <body>
+	<div>
+		<a class="a" href="" style="font-family: Museo Sans Cyrl W03 900; font-size: 60pt;">Descargar</a>
+	</div>
 <div id="historiajpg" class="viewhistoria">
     <div class="historiaclass">
         <div class="centerhistoria">
@@ -406,7 +409,6 @@
 	</g>
 </g>
 </svg>
-            <br></br>
             <br><br><text id="repre-1" class="textologo"></text>
                 <br><text id="repre-2" class="textologo"></text>
             </text>
@@ -581,6 +583,11 @@ if (!consuladovirtual) {
 <script>
     html2canvas(document.querySelector("#historiajpg")).then(function(canvas) {
         document.body.appendChild(canvas);
+
+		let cvs = document.querySelector("canvas");
+		let a = document.querySelector('a');
+		a.href = cvs.toDataURL();
+		a.download="jornadahistoria.png"
     });
 </script>
 

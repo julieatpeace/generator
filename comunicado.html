@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Comunicados</title>
+</head>
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+    <div class="container">
+        <div class="box form-box">
+            <form id="form">
+                <center>
+                    <header>Comunicado</header>
+                    
+                    <div class="field input">
+                        <label for="repre1">Representación línea 1:</label>
+                        <input id="repre1" type="text" value="Ministerio de Relaciones Exteriores">
+                    </div>
+                    <div class="field input">
+                        <label for="repre2">Representación línea 2:</label>
+                        <input id="repre2" type="text">
+                    </div>
+
+                    <div class="field input" style="padding-bottom: 10px;">
+                        <label for="Comprensa">Comunicado de prensa</label>
+                        <input id="comprensa" type="checkbox" style="height: 20px; width: 20px;">
+                        <br>
+                        <label for="Convprensa">Convocatoria de prensa</label>
+                        <input id="convprensa" type="checkbox" style="height: 20px; width: 20px;">
+
+                    </div>
+
+                    <div class="field input">
+                        <label for="Titulocomunicado">Título:</label>
+                        <textarea id="titulocomunicado" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="Textocomunicado">Texto:</label>
+                        <textarea id="textocomunicado" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="Fechacomunicado">Fecha:</label>
+                        <input id="fechacomunicado" type="text">
+ 
+                    <div>
+                        <button class="btn" id="comunicadopost" type="submit" value="one">Comunicado</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const repre1 = document.getElementById('repre1');
+        const repre2 = document.getElementById('repre2');
+        const titulocomunicado = document.getElementById('titulocomunicado');
+        const textocomunicado = document.getElementById('textocomunicado');
+        const fechacomunicado = document.getElementById('fechacomunicado');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const repre1Value = repre1.value;
+            const repre2Value = repre2.value;
+            const titulocomunicadoValue = titulocomunicado.value;
+            const textocomunicadoValue = textocomunicado.value;
+            const fechacomunicadoValue = fechacomunicado.value;
+
+            var checkbox1 = document.getElementById("comprensa");
+            localStorage.setItem("comprensa", checkbox1.checked);
+
+            var checkbox2 = document.getElementById("convprensa");
+            localStorage.setItem("convprensa", checkbox2.checked);
+
+
+            localStorage.setItem('repre-1', repre1Value);
+            localStorage.setItem('repre-2', repre2Value);
+            localStorage.setItem('titulocomunicado', titulocomunicadoValue);
+            localStorage.setItem('textocomunicado', textocomunicadoValue);
+            localStorage.setItem('fechacomunicado', fechacomunicadoValue);
+
+        });
+
+        let btns = document.querySelectorAll("submit");
+
+        document.getElementById('comunicadopost').onclick = function() {
+    form.submit();
+    window.location.href="formato comunicado.html";
+        }
+
+        document.getElementById('home').onclick = function() {
+    window.location.href="index.html";
+        }
+
+    </script>
+</body>
+</html>

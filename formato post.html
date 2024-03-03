@@ -21,6 +21,10 @@
 </head>
 
 <body>
+<div>
+	<a class="a" href="" style="font-family: Museo Sans Cyrl W03 900; font-size: 60pt;">Descargar</a>
+</div>
+<br>
 <div id="postjpg" class="view">
     <div class="postclass">
         <div class="center">
@@ -555,6 +559,8 @@
     </div>
 </div>
 
+<div id="elemento"></div>
+
 <script>
     const repre1 = localStorage.getItem('repre-1');
     const repre2 =  localStorage.getItem('repre-2');
@@ -600,9 +606,13 @@ if (!consuladovirtual) {
 <script>
     html2canvas(document.querySelector("#postjpg")).then(function(canvas) {
         document.body.appendChild(canvas);
-
-
-    });
+    
+		let cvs = document.querySelector("canvas");
+		let a = document.querySelector('a');
+		a.href = cvs.toDataURL();
+		a.download="jornadapost.png"
+	});
+	
 </script>
 <script>
 //document.body.style.zoom="50%"

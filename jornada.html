@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Jornadas extra</title>
+</head>
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+    <div class="container">
+        <div class="box form-box">
+    <form id="form">
+        <center>
+        <header>Jornadas extra</header>
+        <div class="field input">
+            <label for="repre1">Representación línea 1:</label>
+            <input id="repre1" type="text" value="Consulado General de El Salvador">
+        </div>
+        <div class="field input">
+            <label for="repre2">Representación línea 2:</label>
+            <input id="repre2" type="text"> 
+        </div>
+        <div class="field input">
+            <label for="Titulo">Título:</label>
+            <input id="titulo" type="text">
+        </div>
+        <div class="field input">
+            <label for="Fecha">Fecha:</label>
+            <input id="fecha" type="text">
+        </div>
+        <div class="field input">
+            <label for="Hora">Hora:</label>
+            <input id="hora" type="text">
+        </div>
+        <div class="field input">
+            <label for="Lugar">Lugar:</label>
+            <textarea id="lugar" rows="4" cols="50"></textarea>
+        </div>
+        <div class="field input">
+            <label for="Atencion">Atención:</label>
+            <input id="atencion" type="text">
+        </div>
+        <div class="field input">
+            <label for="ConsuladoVirtual">Más información:</label>
+            <input id="consuladovirtual" type="text">
+        </div>
+        <div>
+            <button class= "btn" id= "post" type="submit" value="one">Crear post</button>
+            <button class= "btn" id= "historia" type="submit" value="two">Crear historia</button>
+        </div>
+    </center>
+    </form>
+</div>
+</div>
+
+
+    <script>
+        const form = document.getElementById('form');
+        const repre1 = document.getElementById('repre1');
+        const repre2 = document.getElementById('repre2');
+        const titulo = document.getElementById('titulo');
+        const fecha = document.getElementById('fecha');
+        const hora = document.getElementById('hora');
+        const lugar = document.getElementById('lugar');
+        const atencion = document.getElementById('atencion');
+        const consuladoVirtual = document.getElementById('consuladovirtual');
+       
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+        const repre1Value = repre1.value;
+            const repre2Value = repre2.value;
+            const tituloValue = titulo.value;
+            const fechaValue = fecha.value;
+            const horaValue = hora.value;
+            const lugarValue = lugar.value;
+            const atencionValue = atencion.value;
+            const consuladovirtualValue = consuladoVirtual.value;
+
+            localStorage.setItem('repre-1', repre1Value);
+            localStorage.setItem('repre-2', repre2Value);
+            localStorage.setItem('titulo-a', tituloValue);
+            localStorage.setItem('fecha-a', fechaValue);
+            localStorage.setItem('hora-a', horaValue);
+            localStorage.setItem('lugar-a', lugarValue);
+            localStorage.setItem('atencion-a', atencionValue);
+            localStorage.setItem('consuladovirtual-a', consuladovirtualValue);})
+        
+        let btns = document.querySelectorAll("submit");
+        
+        document.getElementById('post').onclick = function() {
+    form.submit();
+    window.location.href="formato post.html";
+        }
+
+        document.getElementById('historia').onclick = function() {
+    form.submit();
+    window.location.href="formato historia.html";
+        }
+
+        document.getElementById('home').onclick = function() {
+    window.location.href="index.html";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>

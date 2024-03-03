@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Avisos</title>
+</head>
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+
+    <div class="container">
+        <div class="box form-box">
+            <form id="form">
+                <center>
+                    <header>Aviso</header>
+                    
+                    <div class="field input">
+                        <label for="repre1">Representación línea 1:</label>
+                        <input id="repre1" type="text" value="Ministerio de Relaciones Exteriores">
+                    </div>
+                    <div class="field input">
+                        <label for="repre2">Representación línea 2:</label>
+                        <input id="repre2" type="text"> 
+                    </div>
+                    <p style="font-size: 14pt;">Aviso por asueto</p>
+                    <div class="field input">
+                        <label for="Dia1">Informamos que (el día/los días...):</label>
+                        <input id="dia1" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Dia2">Reanudaremos el día:</label>
+                        <input id="dia2" type="text">
+                    </div>
+
+                    <p style="font-size: 14pt;">Aviso por emergencia</p>
+
+                    <div class="field input">
+                        <label for="Textoavisoemergencia">Texto aviso emergencia</label>
+                        <textarea id="textoavisoemergencia" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <p style="font-size: 14pt;">Agregar contactos</p>
+
+                    <div class="field input">
+                        <label for="Numero1">Línea de emergencia:</label>
+                        <input id="numero1" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Numero2">Línea de emergencia:</label>
+                        <input id="numero2" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Numero3">Teléfono:</label>
+                        <input id="numero3" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="WhatsApp">WhatsApp:</label>
+                        <input id="whatsapp" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Consuladovirtual">Consulado Virtual:</label>
+                        <input id="consuladovirtual" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Correo1">Correo:</label>
+                        <input id="correo1" type="text">
+                    </div>
+                    <div class="field input">
+                        <label for="Correo2">Correo:</label>
+                        <input id="correo2" type="text">
+                    </div>
+                    <div>
+                        <button class="btn" id="avisopost" type="submit" value="one">Aviso post</button>
+                        <button class="btn" id="avisohistoria" type="submit" value="two">Aviso historia</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const repre1 = document.getElementById('repre1');
+        const repre2 = document.getElementById('repre2');
+        const dia1 = document.getElementById('dia1');
+        const dia2 = document.getElementById('dia2');
+        const textoavisoemergencia = document.getElementById('textoavisoemergencia');
+
+        const numero1 = document.getElementById('numero1');
+        const numero2 = document.getElementById('numero2');
+        const numero3 = document.getElementById('numero3');
+        const whatsapp = document.getElementById('whatsapp');
+        const consuladovirtual = document.getElementById('consuladovirtual');
+        const correo1 = document.getElementById('correo1');
+        const correo2 = document.getElementById('correo2');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const repre1Value = repre1.value;
+            const repre2Value = repre2.value;
+            const dia1Value = dia1.value;
+            const dia2Value = dia2.value;
+            const textoavisoemergenciaValue = textoavisoemergencia.value;
+
+            const numero1Value = numero1.value;
+            const numero2Value = numero2.value;
+            const numero3Value = numero3.value;
+            const whatsappValue = whatsapp.value;
+            const consuladovirtualValue = consuladovirtual.value;
+            const correo1Value = correo1.value;
+            const correo2Value = correo2.value;
+
+            localStorage.setItem('repre-1', repre1Value);
+            localStorage.setItem('repre-2', repre2Value);
+            localStorage.setItem('dia1', dia1Value);
+            localStorage.setItem('dia2', dia2Value);
+            localStorage.setItem('textoavisoemergencia', textoavisoemergenciaValue);
+
+            localStorage.setItem('numero1', numero1Value);
+            localStorage.setItem('numero2', numero2Value);
+            localStorage.setItem('numero3', numero3Value);
+            localStorage.setItem('whatsapp', whatsappValue);
+            localStorage.setItem('consuladovirtual', consuladovirtualValue);
+            localStorage.setItem('correo1', correo1Value);
+            localStorage.setItem('correo2', correo2Value);
+
+        });
+
+        let btns = document.querySelectorAll("submit");
+        
+        document.getElementById('avisopost').onclick = function() {
+    form.submit();
+    window.location.href="formato aviso.html";
+        }
+
+        document.getElementById('avisohistoria').onclick = function() {
+    form.submit();
+    window.location.href="Aviso historia.html";
+        }
+
+        document.getElementById('home').onclick = function() {
+    window.location.href="index.html";
+        }
+
+    </script>
+</body>
+</html>
