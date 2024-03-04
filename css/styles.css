@@ -38,6 +38,43 @@
   url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.svg#BemboStd")format("svg");
 }
 
+@font-face {
+  font-family: "Museo Sans 300";
+  src: url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.eot");
+  src: url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.svg#Museo Sans 300")format("svg");
+}
+
+.textoesquela
+{
+  font-family: "Museo Sans 300";
+  color: #232323;
+  font-size: 22pt;
+
+}
+
+.fechaesquela
+{
+  font-family: "Museo Sans 300";
+  color: #232323;
+  font-size: 18pt;
+
+}
+
+.nombre
+  {
+    font-family: "BemboStd";
+    color: #232323;
+    font-size: 45pt;
+    line-height: 1;
+    margin: 15px;
+    padding: 5px;
+    padding-top: 20px;
+
+  }
 
 .comunicadodeprensaa
   {
@@ -124,6 +161,17 @@ textarea {
   resize: vertical;
   height: 100px;
   width: 95%;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+  outline: none;
+  margin-bottom: 10px;
+}
+
+select {
+  height: 40px;
+  width: 100%;
   font-size: 15px;
   padding: 0 10px;
   border-radius: 5px;
