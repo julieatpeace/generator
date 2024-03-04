@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Generador UCOM</title>
+</head>
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+    <div class="container">
+        <div class="box form-box">
+            <form id="form">
+                <center>
+                    <header>Esquelas</header>
+
+                    <label id="Remitente">Remitente:</label>
+                    <br>
+                        <select name="remitente" id="remitente">
+                        <option value="remitente1">Canciller Alexandra Hill Tinoco</option>
+                        <option value="remitente2">Viceministra Adriana Mira</option>
+                        <option value="remitente3">Viceministra Cindy Mariella Portal</option>
+                        <option value="remitente4">Otros</option>
+                    </select>
+
+                    <div class="field input">
+                        <label id="Texto1">Texto 1:</label>
+                        <textarea id="texto1" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label id="Nombre">Nombre:</label>
+                        <input id="nombre" type="text">
+                    </div>
+
+                    <div class="field input">
+                        <label id="Texto2">Texto 2:</label>
+                        <textarea id="texto2" rows="4" cols="50"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label id="Fechaesquela">Fecha:</label>
+                        <input id="fechaesquela" type="text">
+ 
+                    <div>
+                        <button class="btn" id="esquelapost" type="submit" value="one">Crear esquela</button>
+                    </div>
+                </center>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        const form = document.getElementById('form');
+        const texto1 = document.getElementById('texto1');
+        const nombre = document.getElementById('nombre');
+        const texto2 = document.getElementById('texto2');
+        const fechaesquela = document.getElementById('fechaesquela');
+
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const texto1Value = texto1.value;
+            const texto2Value = texto2.value;
+            const nombreValue = nombre.value;
+            const fechaesquelaValue = fechaesquela.value;
+
+            var dropdown = document.getElementById("remitente");
+            var remitenteValue = dropdown.options[dropdown.selectedIndex].value;
+            localStorage.setItem('remitente', remitenteValue);
+
+            localStorage.setItem('texto1', texto1Value);
+            localStorage.setItem('texto2', texto2Value);
+            localStorage.setItem('nombre', nombreValue);
+            localStorage.setItem('fechaesquela', fechaesquelaValue);
+
+        });
+
+        let btns = document.querySelectorAll("submit");
+
+        document.getElementById('esquelapost').onclick = function() {
+    form.submit();
+    window.location.href="formato esquela.html";
+        }
+
+        document.getElementById('home').onclick = function() {
+    window.location.href="index.html";
+        }
+
+    </script>
+</body>
+</html>
