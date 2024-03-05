@@ -588,12 +588,12 @@
 	document.getElementById('atencion-a').textContent = atencion;
 }
 
-if (consuladovirtual== " ") {
+if (!consuladovirtual) {
 	document.getElementById('filaconsulado').style.display = 'none';
+	document.getElementById('iconoconsulado').style.display = 'none';
 	
 } else {
 	document.getElementById('consuladovirtual-a').innerText = consuladovirtual;
-	
 }
 
 
