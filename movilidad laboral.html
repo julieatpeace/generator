@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet"/>
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Generador UCOM</title>
+</head>
+
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+    <div class="container">
+        <div class="box form-box">
+            <form id="imageForm">
+                <center>
+                    <header>Movilidad Laboral</header>
+                    
+                    <div class="field input">
+                        <label for="Subtitulo">Invitamos a personas con experiencia (en/como):</label>
+                        <textarea id="subtitulo" type="text"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="imagen">Imagen:</label>
+                        <input type="file" id="imageInput" accept="image/*">
+                    </div>
+ 
+                    <div>
+                        <button class="btn" id="movilidadpost1" type="submit" value="one">Portada</button>
+                    </div>
+
+                </center>
+            </form>
+
+        </div>
+
+        <div class="box form-box">
+            <form id="Requisitosform">
+                <center>
+                    <header>Requisitos</header>
+                    
+                    <div class="field input">
+                        <label for="requisito1">Requisito 1:</label>
+                        <textarea id="requisito1" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito2">Requisito 2:</label>
+                        <textarea id="requisito2" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito3">Requisito 3:</label>
+                        <textarea id="requisito3" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito4">Requisito 4:</label>
+                        <textarea id="requisito4" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito5">Requisito 5:</label>
+                        <textarea id="requisito5" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito6">Requisito 6:</label>
+                        <textarea id="requisito6" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="requisito7">Requisito INGLÉS (en bold):</label>
+                        <textarea id="requisito7" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="fecha">Fecha:</label>
+                        <textarea id="fecha" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="hora">Hora:</label>
+                        <textarea id="hora" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
+                        <label for="hashtag">Hashtag:</label>
+                        <textarea id="hashtag" type="text" style="height: 40px;"></textarea>
+                    </div>
+ 
+                    <div>
+                        <button class="btn" id="movilidadpost2" type="submit" value="one">Requisitos</button>
+                    </div>
+
+                </center>
+            </form>
+
+            
+        </div>
+    </div>
+
+    <script>
+        const subtitulo = document.getElementById('subtitulo');
+        
+        const requisito1 = document.getElementById('requisito1');
+        const requisito2 = document.getElementById('requisito2');
+        const requisito3 = document.getElementById('requisito3');
+        const requisito4 = document.getElementById('requisito4');
+        const requisito5 = document.getElementById('requisito5');
+        const requisito6 = document.getElementById('requisito6');
+        const requisito7 = document.getElementById('requisito7');
+        const fecha = document.getElementById('fecha');
+        const hora = document.getElementById('hora');
+        const hashtag = document.getElementById('hashtag');
+
+        document.getElementById('imageForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const fileInput = document.getElementById('imageInput');
+            const file = fileInput.files[0];
+            const reader = new FileReader();
+            reader.onload = function(event) {
+                localStorage.setItem('uploadedImage', event.target.result);
+                window.location.href = 'formato movilidad laboral 1.html';
+            };
+            reader.readAsDataURL(file);
+
+            const subtituloValue = subtitulo.value;
+
+            localStorage.setItem('subtitulo', subtituloValue);       
+
+        });
+
+        document.getElementById('Requisitosform').addEventListener('submit', function(e) {
+            e.preventDefault();
+
+            const requisito1Value = requisito1.value;
+            const requisito2Value = requisito2.value;
+            const requisito3Value = requisito3.value;
+            const requisito4Value = requisito4.value;
+            const requisito5Value = requisito5.value;
+            const requisito6Value = requisito6.value;
+            const requisito7Value = requisito7.value;
+
+            const fechaValue = fecha.value;
+            const horaValue = hora.value;
+            const hashtagValue = hashtag.value;
+
+            localStorage.setItem('requisito1', requisito1Value);
+            localStorage.setItem('requisito2', requisito2Value);
+            localStorage.setItem('requisito3', requisito3Value);
+            localStorage.setItem('requisito4', requisito4Value);
+            localStorage.setItem('requisito5', requisito5Value);
+            localStorage.setItem('requisito6', requisito6Value);
+            localStorage.setItem('requisito7', requisito7Value);
+
+            localStorage.setItem('fecha', fechaValue);
+            localStorage.setItem('hora', horaValue);
+            localStorage.setItem('hashtag', hashtagValue);    
+
+        });
+
+
+        let btns = document.querySelectorAll("submit");
+
+        document.getElementById('movilidadpost1').onclick = function() {
+        imageForm.submit();
+        window.location.href="formato movilidad laboral 1.html";}
+
+        document.getElementById('movilidadpost2').onclick = function() {
+        Requisitosform.submit();
+        window.location.href="formato movilidad laboral 2.html";}
+
+        document.getElementById('home').onclick = function() {
+        window.location.href="index.html";
+        }
+    </script>
+
+</body>
+</html>

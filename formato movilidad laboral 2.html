@@ -1,0 +1,208 @@
+<html>
+<head>
+    <link href="css/styles.css" rel="stylesheet" />
+	<link rel="icon" type="image/x-icon" href="images/favicon.ico">
+	<title>Generador UCOM</title>
+
+	<style> 
+    .contenedor1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 90vh;
+    flex-direction: column;
+    }
+
+    .caja {
+    background: #fdfdfd;
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+    border-radius: 25px;
+    box-shadow: 0 0 10px 0 rgba(148, 151, 192, 0.1),
+    0 32px 64px -48px rgba(0, 0, 0, 0);
+    width: 670px;
+    margin: 10px;
+    }
+
+    .caja2 {
+    background: #57c0e5;
+    display: flex;
+    flex-direction: column;
+    border-radius: 40px;
+    width: fit-content;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-top: 15px;
+    }
+
+    .textoregular {
+        font-family: "Museo Sans 300";
+        font-size: 24px;
+        color: #5f7391;
+    }
+
+    .textobold {
+        font-family: "Museo Sans 700";
+        font-size: 24px;
+        color: #5f7391;
+    }
+
+    .programa {
+            font-family: "Poppins SemiBold";
+            font-size: 27pt;
+            line-height: 60px;
+            color: #57c0e5;
+        }
+
+    #hashtag {
+            font-family: "Poppins SemiBold";
+            font-size: 22pt;
+            color: #ffffff;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <a class="a" href="" style="font-family: Museo Sans Cyrl W03 900; font-size: 60pt;">Descargar</a>
+    </div>
+    <div id="portada" style="height: 1350px; width: 1080px; background-color: #eaf4ff ;">
+        <div class="contenedor1">
+            <text class="programa">Requisitos:</text>
+            <div class="caja">
+                
+                <text id="r1" class="textoregular">✅&nbsp;<span id="requisito1"></span></text>
+                <text id="r2" class="textoregular">✅&nbsp;<span id="requisito2"></span></text>
+                <text id="r3" class="textoregular">✅&nbsp;<span id="requisito3"></span></text>
+                <text id="r4" class="textoregular">✅&nbsp;<span id="requisito4"></span></text>
+                <text id="r5" class="textoregular">✅&nbsp;<span id="requisito5"></span></text>
+                <text id="r6" class="textoregular">✅&nbsp;<span id="requisito6"></span></text>
+                <text id="r7" class="textobold">✅&nbsp;<span id="requisito7"></span></text>
+                
+            </div>
+            <text class="programa">Si cumples con los requisitos:</text>
+
+            <div class="caja">
+                <center>
+                <text class="textoregular">Puedes presentarte a una entrevista con cartas <br>de referencias de trabajos anteriores.</text>
+                <br><br><text class="textoregular">🗓️ <span class="textobold">Fecha:&nbsp;</span><span id="fecha" class="textoregular"></span></text>
+                <br><text class="textoregular">⏰ <span class="textobold">Hora:&nbsp;</span><span id="hora" class="textoregular"></span></text>
+                <br><br><text class="textoregular">📍 <span class="textobold">Dirección:</span> Ministerio de Relaciones Exteriores, 
+                    <br>Bulevar Cancillería, calle El Pedregal, Antiguo Cuscatlán, 
+                    <br>La Libertad (Dirección de Diáspora y Desarrollo, 
+                    <br>Departamento de Programas de Movilidad Laboral).</text>
+                </center></div>
+            <div class="caja">
+            <text class="textoregular" style="text-align: center;">Si estás interesado, pero tienes dificultades para presentarte, 
+            <br>escríbenos al <span class="textobold"> WhatsApp 7070-1243</span>, usando el hashtag</text> 
+            <center>
+            <div class="caja2">
+                <text id="hashtag" class="textoregular"> Jardineros</text>
+            </div></center>
+        </div>
+            <br>
+            <text class="textoregular" style="text-align: center;"><span class="textobold"> Nota: </span> si tu perfil encaja con lo solicitado por la empresa 
+            <br>empleadora, te contactaremos para una segunda entrevista.</text>
+        </div>
+        
+    </div>
+
+<script>
+    const requisito1 = localStorage.getItem('requisito1');
+    const requisito2 = localStorage.getItem('requisito2');
+    const requisito3 = localStorage.getItem('requisito3');
+    const requisito4 = localStorage.getItem('requisito4');
+    const requisito5 = localStorage.getItem('requisito5');
+    const requisito6 = localStorage.getItem('requisito6');
+    const requisito7 = localStorage.getItem('requisito7');
+
+    const fecha = localStorage.getItem('fecha');  
+    document.getElementById('fecha').textContent = fecha;
+
+    const hora = localStorage.getItem('hora');  
+    document.getElementById('hora').textContent = hora;
+
+    const hashtag = localStorage.getItem('hashtag');  
+    document.getElementById('hashtag').textContent = hashtag;
+	
+
+	if (!requisito1) {
+		document.getElementById('r1').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito1').innerText = requisito1;
+	}
+
+    if (!requisito2) {
+		document.getElementById('r2').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito2').innerText = requisito2;
+	}
+
+    if (!requisito3) {
+		document.getElementById('r3').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito3').innerText = requisito3;
+	}
+
+    if (!requisito4) {
+		document.getElementById('r4').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito4').innerText = requisito4;
+	}
+
+    if (!requisito4) {
+		document.getElementById('r4').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito4').innerText = requisito4;
+	}
+
+    if (!requisito5) {
+		document.getElementById('r5').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito5').innerText = requisito5;
+	}
+
+    if (!requisito6) {
+		document.getElementById('r6').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito6').innerText = requisito6;
+	}
+
+    if (!requisito7) {
+		document.getElementById('r7').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito7').innerText = requisito7;
+	}
+
+</script>
+
+<br/>
+<script src="html2canvas/html2canvas.js"></script>
+<script>
+    html2canvas(document.querySelector("#portada")).then(function(canvas) {
+        document.body.appendChild(canvas);
+		
+		let cvs = document.querySelector("canvas");
+		let a = document.querySelector('a');
+		a.href = cvs.toDataURL();
+		a.download="movilidadlaboral2.png"
+
+    });
+</script>
+
+</body>
+</html>
