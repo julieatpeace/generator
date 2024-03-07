@@ -48,6 +48,36 @@
   url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.svg#Museo Sans 300")format("svg");
 }
 
+@font-face {
+  font-family: "Poppins ExtraBold";
+  src: url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.eot");
+  src: url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.svg#Poppins ExtraBold")format("svg");
+}
+
+@font-face {
+  font-family: "Museo Sans 700";
+  src: url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot");
+  src: url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.svg#Museo Sans 700")format("svg");
+}
+
+@font-face {
+  font-family: "Poppins SemiBold";
+  src: url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot");
+  src: url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot?#iefix")format("embedded-opentype"),
+  url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.woff2")format("woff2"),
+  url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.woff")format("woff"),
+  url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.ttf")format("truetype"),
+  url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.svg#Poppins SemiBold")format("svg");
+}
+
 .textoesquela
 {
   font-family: "Museo Sans 300";
@@ -194,7 +224,7 @@ label {
   font-size: 15px;
   cursor: pointer;
   transition: all .03s;
-  margin-top: 20px;
+  margin: 3px;
   padding: 0px 15px;
 }
 
