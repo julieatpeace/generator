@@ -6,15 +6,59 @@
     <link href="css/styles.css" rel="stylesheet"/>
     <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <title>Generador UCOM</title>
+
+<style>
+.contenedor2 {
+  display: flex;
+  flex-wrap: wrap; /* Allow items to wrap onto multiple lines */
+  align-items: flex-start; /* Align items to start of flex container */
+  justify-content: center;
+  min-height: 90vh;
+}
+
+.caja3 {
+  background: #fdfdfd;
+  display: flex;
+  width: 400px;
+  margin: 10px;
+  flex-direction: column;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px 0 rgba(148, 151, 192, 0.1),
+  0 32px 64px -48px rgba(0, 0, 0, 0.1);
+}
+
+.caja3 header {
+  font-family: "Museo Sans Cyrl W03 900";
+  font-size: 35px;
+  color: #111e60;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 20px;
+
+}
+
+.caja3 form .input input{
+  height: 40px;
+  width: 95%;
+  font-size: 15px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid#ccc;
+  outline: none;
+  margin-bottom: 10px;
+}
+</style>
+
 </head>
 
 <body class="indexbg">
     <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
-    <div class="container">
-        <div class="box form-box">
+    <div class="contenedor2">
+        <div class="caja3">
             <form id="imageForm">
                 <center>
-                    <header>Movilidad Laboral</header>
+                    <header>Arte portada</header>
                     
                     <div class="field input">
                         <label for="Subtitulo">Invitamos a personas con experiencia (en/como):</label>
@@ -32,10 +76,8 @@
 
                 </center>
             </form>
-
         </div>
-
-        <div class="box form-box">
+        <div class="caja3">
             <form id="Requisitosform">
                 <center>
                     <header>Requisitos</header>
@@ -96,8 +138,6 @@
 
                 </center>
             </form>
-
-            
         </div>
     </div>
 
