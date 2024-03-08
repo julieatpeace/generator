@@ -66,7 +66,7 @@
                     </div>
 
                     <div class="field input">
-                        <label for="imagen">Imagen:</label>
+                        <label for="imagen">Imagen (no mayor de 2MB):</label>
                         <input type="file" id="imageInput" accept="image/*">
                     </div>
  
@@ -113,6 +113,11 @@
                     </div>
 
                     <div class="field input">
+                        <label for="requisito6">Requisito 7:</label>
+                        <textarea id="requisito8" type="text" style="height: 40px;"></textarea>
+                    </div>
+
+                    <div class="field input">
                         <label for="requisito7">Requisito INGLÉS (en bold):</label>
                         <textarea id="requisito7" type="text" style="height: 40px;"></textarea>
                     </div>
@@ -151,6 +156,7 @@
         const requisito5 = document.getElementById('requisito5');
         const requisito6 = document.getElementById('requisito6');
         const requisito7 = document.getElementById('requisito7');
+        const requisito8 = document.getElementById('requisito8');
         const fecha = document.getElementById('fecha');
         const hora = document.getElementById('hora');
         const hashtag = document.getElementById('hashtag');
@@ -182,6 +188,7 @@
             const requisito5Value = requisito5.value;
             const requisito6Value = requisito6.value;
             const requisito7Value = requisito7.value;
+            const requisito8Value = requisito8.value;
 
             const fechaValue = fecha.value;
             const horaValue = hora.value;
@@ -194,6 +201,7 @@
             localStorage.setItem('requisito5', requisito5Value);
             localStorage.setItem('requisito6', requisito6Value);
             localStorage.setItem('requisito7', requisito7Value);
+            localStorage.setItem('requisito8', requisito8Value);
 
             localStorage.setItem('fecha', fechaValue);
             localStorage.setItem('hora', horaValue);

@@ -73,15 +73,18 @@
         <div class="contenedor1" style="height: 1350px; width: 1080px;">
             <text class="programa">Requisitos:</text>
             <div class="caja">
-                
-                <text id="r1" class="textoregular">✅&nbsp;<span id="requisito1"></span></text>
-                <text id="r2" class="textoregular">✅&nbsp;<span id="requisito2"></span></text>
-                <text id="r3" class="textoregular">✅&nbsp;<span id="requisito3"></span></text>
-                <text id="r4" class="textoregular">✅&nbsp;<span id="requisito4"></span></text>
-                <text id="r5" class="textoregular">✅&nbsp;<span id="requisito5"></span></text>
-                <text id="r6" class="textoregular">✅&nbsp;<span id="requisito6"></span></text>
-                <text id="r7" class="textobold">✅&nbsp;<span id="requisito7"></span></text>
-                
+                <center>
+                <table style="min-width: fit-content;">
+                    <tr id="r1"><td><text class="textoregular">✅&nbsp;<span id="requisito1"></span></text></td></tr>
+                    <tr id="r2"><td><text class="textoregular">✅&nbsp;<span id="requisito2"></span></text></td></tr>
+                    <tr id="r3"><td><text  class="textoregular">✅&nbsp;<span id="requisito3"></span></text></td></tr>
+                    <tr id="r4"><td><text  class="textoregular">✅&nbsp;<span id="requisito4"></span></text></td></tr>
+                    <tr id="r5"><td><text  class="textoregular">✅&nbsp;<span id="requisito5"></span></text></td></tr>
+                    <tr id="r6"><td><text  class="textoregular">✅&nbsp;<span id="requisito6"></span></text></td></tr>
+                    <tr id="r8"><td><text  class="textoregular">✅&nbsp;<span id="requisito8"></span></text></td></tr>
+                    <tr id="r7"><td><text  class="textobold">✅&nbsp;<span id="requisito7"></span></text></td></tr>
+                </table>
+                </center>
             </div>
             <text class="programa">Si cumples con los requisitos:</text>
 
@@ -119,6 +122,7 @@
     const requisito5 = localStorage.getItem('requisito5');
     const requisito6 = localStorage.getItem('requisito6');
     const requisito7 = localStorage.getItem('requisito7');
+    const requisito8 = localStorage.getItem('requisito8');
 
     const fecha = localStorage.getItem('fecha');  
     document.getElementById('fecha').textContent = fecha;
@@ -184,6 +188,13 @@
     }
 	else {
 		document.getElementById('requisito7').innerText = requisito7;
+	}
+
+    if (!requisito8) {
+		document.getElementById('r8').style.display = 'none';
+    }
+	else {
+		document.getElementById('requisito8').innerText = requisito8;
 	}
 
 </script>
