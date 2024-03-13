@@ -8,9 +8,7 @@
     <title>Generador UCOM</title>
 </head>
 <body class="indexbg">
-    <div>
-       
-    </div>
+    <div class="loader"></div>
     <div class="container">
         <div class="box form-box">
             
@@ -31,6 +29,18 @@
            
         </div>
     </div>
+
+    <script>
+        window.addEventListener("load",() => {
+        const loader = document.querySelector(".loader");
+    
+        loader.classList.add("loader-hidden");
+    
+        loader.addEventListener("transitionend", () => {
+            document.body.removeChild(loader);
+        })
+    })
+    </script>
 
     <script>
 
