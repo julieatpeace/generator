@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/styles.css" rel="stylesheet" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+    <title>Generador UCOM</title>
+</head>
+<body class="indexbg">
+    <button class="home" id="home"><center><img src="images/home-svgrepo-com.svg" alt="home" style="width: 100%;"></center></button>
+    <div class="container">
+        <div class="box form-box">
+    <form id="form">
+        <center>
+        <header>Firma de correo</header>
+        <div class="field input">
+            <label for="nombre">Nombre</label>
+            <input id="nombre" type="text">
+        </div>
+        <div class="field input">
+            <label for="cargo">Cargo:</label>
+            <textarea id="cargo" rows="4" cols="50"></textarea>
+        </div>
+
+        <div class="field input">
+            <label for="telefono">Teléfono:</label>
+            <input id="telefono" type="text">
+        </div>
+        <div class="field input">
+            <label for="celular">Celular:</label>
+            <input id="celular" type="text">
+        </div>
+        <div class="field input">
+            <label for="correo">Correo:</label>
+            <input id="correo" type="text">
+        </div>
+        <div class="field input">
+            <label for="sede">Sede o Representación:</label>
+            <textarea id="sede" rows="4" cols="50">Ministerio de Relaciones Exteriores</textarea>
+        </div>
+        <div class="field input">
+            <label for="direccion">Dirección:</label>
+            <textarea id="direccion" rows="4" cols="50">Calle El Pedregal, Blvd. Cancillería, Ciudad Merliot, Antiguo Cuscatlán
+www.rree.gob.sv
+            </textarea>
+        </div>
+        <div>
+            <button class= "btn" id= "post" type="submit" value="one">Crear firma</button>
+        </div>
+    </center>
+    </form>
+</div>
+</div>
+
+
+    <script>
+        const form = document.getElementById('form');
+        const nombre = document.getElementById('nombre');
+        const cargo = document.getElementById('cargo');
+        const telefono = document.getElementById('telefono');
+        const celular = document.getElementById('celular');
+        const correo = document.getElementById('correo');
+        const sede = document.getElementById('sede');
+        const direccion = document.getElementById('direccion');
+       
+        form.addEventListener('submit', function(e){
+            e.preventDefault();
+
+            const nombreValue = nombre.value;
+            const cargoValue = cargo.value;
+            const telefonoValue = telefono.value;
+            const celularValue = celular.value;
+            const correoValue = correo.value;
+            const sedeValue = sede.value;
+            const direccionValue = direccion.value;
+
+            localStorage.setItem('nombre', nombreValue);
+            localStorage.setItem('cargo', cargoValue);
+            localStorage.setItem('telefono', telefonoValue);
+            localStorage.setItem('celular', celularValue);
+            localStorage.setItem('correo', correoValue);
+            localStorage.setItem('sede', sedeValue);
+            localStorage.setItem('direccion', direccionValue);
+            })
+        
+        let btns = document.querySelectorAll("submit");
+        
+        document.getElementById('post').onclick = function() {
+    form.submit();
+    window.location.href="formato firma.html";
+        }
+
+        document.getElementById('home').onclick = function() {
+    window.location.href="index.html";
+        }
+
+
+    </script>
+
+
+
+</body>
+
+</html>
