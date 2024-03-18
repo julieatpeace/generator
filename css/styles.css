@@ -82,7 +82,8 @@
 {
   font-family: "Museo Sans 300";
   color: #232323;
-  font-size: 18pt;
+  font-size: pt;
+  line-height: normal;
 
 }
 
@@ -90,7 +91,8 @@
 {
   font-family: "Museo Sans 300";
   color: #232323;
-  font-size: 16pt;
+  font-size: 18pt;
+  line-height: normal;
 
 }
 
@@ -98,10 +100,10 @@
   {
     font-family: "BemboStd";
     color: #232323;
-    font-size: 40pt;
+    font-size: 45pt;
     line-height: 1;
     margin: 15px;
-    padding: 5px;
+    padding: 10px;
     padding-top: 20px;
 
   }
