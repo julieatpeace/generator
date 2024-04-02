@@ -1,5 +1,6 @@
 @font-face {
     font-family: "Museo Sans 500";
+    src: url("/fonts/Museo Sans 500.ttf");
     src: url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.eot");
     src: url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/62c0135163427c652ae397f327f85010.woff2")format("woff2"),
@@ -10,6 +11,7 @@
 
 @font-face {
     font-family: "Museo Sans Cyrl W03 900";
+    src: url("/fonts/Museo Sans Cyrl W03 900.ttf");
     src: url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.eot");
     src: url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/2f1f3feea7d6b09afda02d8a4b54dea1.woff2")format("woff2"),
@@ -20,6 +22,7 @@
 
 @font-face {
     font-family: "BemboStd-Bold";
+    src: url("/fonts/BemboStd-Bold.ttf");
     src: url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.eot");
     src: url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/7d4ef161ad139d9beacd29fd22cc9431.woff2")format("woff2"),
@@ -30,6 +33,7 @@
 
 @font-face {
     font-family: "BemboStd";
+    src: url("/fonts/BemboStd.ttf");
     src: url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.eot");
     src: url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/90c4b109fbd8e368b38c6feafbeb9984.woff2")format("woff2"),
@@ -40,6 +44,7 @@
 
 @font-face {
     font-family: "Museo Sans 300";
+    src: url("/fonts/Museo Sans 300.ttf");
     src: url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.eot");
     src: url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/060c6a47b25e474e5dc3726cffbf2023.woff2")format("woff2"),
@@ -50,6 +55,7 @@
 
 @font-face {
     font-family: "Poppins ExtraBold";
+    src: url("/fonts/Poppins ExtraBold.ttf");
     src: url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.eot");
     src: url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/1a69bbaf09f62b4596f5020478cd0399.woff2")format("woff2"),
@@ -60,6 +66,7 @@
 
 @font-face {
     font-family: "Museo Sans 700";
+    src: url("/fonts/Museo Sans 700.ttf");
     src: url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot");
     src: url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/b1de76f2d448dcdf44d092114d6ba04a.woff2")format("woff2"),
@@ -70,6 +77,7 @@
 
 @font-face {
     font-family: "Poppins SemiBold";
+    src: url("/fonts/Poppins SemiBold.ttf");
     src: url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot");
     src: url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.eot?#iefix")format("embedded-opentype"),
     url("https://db.onlinewebfonts.com/t/028b4cfdfab5d1049178e9b1eb42f49e.woff2")format("woff2"),
